@@ -1,0 +1,20 @@
+{
+    "name": "cookbook/contracts",
+    "description": "Interfaces for Cookbook CMS",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nikola Plavsic",
+            "email": "nikolaplavsic@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cookbook\\Contracts\\": ""
+        }
+    },
+    "minimum-stability": "dev"
+}
