@@ -50,11 +50,11 @@ interface AttributeHandlerContract
 	/**
 	 * Make changes to attribute before handing it to application
 	 * 
-	 * @param $attribute
+	 * @param stdClass $attribute
 	 * 
 	 * @return object
 	 */
-	public function transformAttribute($attribute);
+	public function transformAttribute(\stdClass $attribute);
 
 	/**
 	 * Clean all related values and set entries for given attribute
@@ -62,11 +62,11 @@ interface AttributeHandlerContract
 	 * Takes attribute that needs to be deleted,
 	 * and deletes all related values and set entries
 	 * 
-	 * @param $attribute
+	 * @param stdClass $attribute
 	 * 
 	 * @return boolean
 	 */
-	public function sweepAfterAttribute($attribute);
+	public function sweepAfterAttribute(\stdClass $attribute);
 
 	/**
 	 * Clean all related values for given attribute option
@@ -74,11 +74,11 @@ interface AttributeHandlerContract
 	 * Takes attribute option that needs to be deleted,
 	 * and deletes all related values
 	 * 
-	 * @param $option
+	 * @param stdClass $option
 	 * 
 	 * @return boolean
 	 */
-	public function sweepAfterOption($option);
+	public function sweepAfterOption(\stdClass $option);
 
 	/**
 	 * Clean all related values for given set attribute
@@ -86,11 +86,11 @@ interface AttributeHandlerContract
 	 * Takes set attribute that needs to be deleted,
 	 * and deletes all related values
 	 * 
-	 * @param $setAttribute
+	 * @param stdClass $setAttribute
 	 * 
 	 * @return boolean
 	 */
-	public function sweepAfterSetAttribute($setAttribute);
+	public function sweepAfterSetAttribute(\stdClass $setAttribute);
 
 	/**
 	 * Take attribute value and transform it for output (management API use)
@@ -141,11 +141,11 @@ interface AttributeHandlerContract
 	 * 
 	 * Takes attribute value params and attribute definition
 	 * 
-	 * @param array $valueParams
-	 * @param $attributeDefinition
+	 * @param array 	$valueParams
+	 * @param stdClass 	$attributeDefinition
 	 * 
 	 * @return boolean
 	 */
-	public function updateValue($valueParams, $attributeDefinition);
+	public function updateValue($valueParams, \stdClass$attributeDefinition);
 
 }
