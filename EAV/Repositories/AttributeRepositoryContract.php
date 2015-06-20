@@ -8,10 +8,14 @@
  * file that was distributed with this source code.
  */
 
-namespace Cookbook\Contracts\EAV;
+namespace Cookbook\Contracts\EAV\Repositories;
+
+use Cookbook\Contracts\Core\RepositoryContract;
 
 /**
- * Interface for Attribute Handler Factory class
+ * Interface for Attribute Repository class
+ *
+ * @uses  Cookbook\Contracts\Core\RepositoryContract
  * 
  * @author  	Nikola Plavšić <nikolaplavsic@gmail.com>
  * @copyright  	Nikola Plavšić <nikolaplavsic@gmail.com>
@@ -19,14 +23,7 @@ namespace Cookbook\Contracts\EAV;
  * @since 		0.1.0-alpha
  * @version  	0.1.0-alpha
  */
-interface AttributeHandlerFactoryContract
+interface AttributeRepositoryContract extends RepositoryContract
 {
-	/**
-	 * Make appropriate AttributeHandler by attribute field type.
-	 * 
-	 * @param string $attributeFieldType
-	 * 
-	 * @return Cookbook\Contracts\EAV\AttributeHandlerContract
-	 */
-	public function make($attributeFieldType);
+	
 }

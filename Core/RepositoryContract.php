@@ -1,0 +1,49 @@
+<?php 
+/*
+ * This file is part of the cookbook/contracts package.
+ *
+ * (c) Nikola Plavšić <nikolaplavsic@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Cookbook\Contracts\Core;
+
+use Cookbook\Contracts\Core\ErrorManagementContract;
+
+/**
+ * Interface for any repository in Cookbook package
+ * 
+ * These are just basic functions that any repository should have.
+ * This interface will be implemented by abstract repository.
+ * 
+ * @uses   		Cookbook\Contracts\Core\ErrorManagementContract
+ * 
+ * @author  	Nikola Plavšić <nikolaplavsic@gmail.com>
+ * @copyright  	Nikola Plavšić <nikolaplavsic@gmail.com>
+ * @package 	cookbook/contracts
+ * @since 		0.1.0-alpha
+ * @version  	0.1.0-alpha
+ */
+interface RepositoryContract extends ErrorManagementContract
+{
+	
+	/**
+	 * Inserting model into database
+	 * @param $model array | object with parameters for object creation.
+	 */
+	public function create($model);
+
+	/**
+	 * Updating model in database
+	 * @param $model array | object with parameters for object update.
+	 */
+	public function update($model);
+
+	/**
+	 * Deleting model with given ID from database
+	 * @param $id int ID of object to be deleted.
+	 */
+	public function delete($id);
+}

@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Cookbook\Contracts\EAV;
+namespace Cookbook\Contracts\EAV\Handlers;
 
 /**
  * Interface for Attribute Handler class
