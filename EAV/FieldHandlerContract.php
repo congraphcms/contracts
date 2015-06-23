@@ -8,10 +8,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Cookbook\Contracts\EAV\Handlers;
+namespace Cookbook\Contracts\EAV;
 
 /**
- * Interface for Attribute Handler class
+ * Interface for Field Handler class
  * 
  * @author  	Nikola Plavšić <nikolaplavsic@gmail.com>
  * @copyright  	Nikola Plavšić <nikolaplavsic@gmail.com>
@@ -19,7 +19,7 @@ namespace Cookbook\Contracts\EAV\Handlers;
  * @since 		0.1.0-alpha
  * @version  	0.1.0-alpha
  */
-interface AttributeHandlerContract
+interface FieldHandlerContract
 {
 	/**
 	 * Check for specific rules and validation on attribute insert

@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Cookbook\Contracts\EAV\Repositories;
+namespace Cookbook\Contracts\EAV;
 
 use Cookbook\Contracts\Core\RepositoryContract;
 
