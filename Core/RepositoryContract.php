@@ -10,15 +10,11 @@
 
 namespace Cookbook\Contracts\Core;
 
-use Cookbook\Contracts\Core\ErrorManagementContract;
-
 /**
  * Interface for any repository in Cookbook package
  * 
  * These are just basic functions that any repository should have.
  * This interface will be implemented by abstract repository.
- * 
- * @uses   		Cookbook\Contracts\Core\ErrorManagementContract
  * 
  * @author  	Nikola Plavšić <nikolaplavsic@gmail.com>
  * @copyright  	Nikola Plavšić <nikolaplavsic@gmail.com>
