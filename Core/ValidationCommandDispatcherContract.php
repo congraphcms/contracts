@@ -10,6 +10,7 @@
 
 namespace Cookbook\Contracts\Core;
 
+use Closure;
 use Illuminate\Contracts\Bus\QueueingDispatcher;
 
 /**
