@@ -22,7 +22,7 @@ namespace Cookbook\Contracts\Core;
  * @since 		0.1.0-alpha
  * @version  	0.1.0-alpha
  */
-interface RepositoryContract extends ErrorManagementContract
+interface RepositoryContract
 {
 	
 	/**
