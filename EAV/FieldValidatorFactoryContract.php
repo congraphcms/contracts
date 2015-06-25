@@ -19,7 +19,7 @@ namespace Cookbook\Contracts\EAV;
  * @since 		0.1.0-alpha
  * @version  	0.1.0-alpha
  */
-interface FieldFactoryContract
+interface FieldValidatorFactoryContract
 {
 	/**
 	 * Make appropriate AttributeHandler by attribute field type.
