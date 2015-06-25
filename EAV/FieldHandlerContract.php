@@ -21,31 +21,6 @@ namespace Cookbook\Contracts\EAV;
  */
 interface FieldHandlerContract
 {
-	/**
-	 * Check for specific rules and validation on attribute insert
-	 * 
-	 * Called after standard attribute validation with referenced attribute params
-	 * depending on boolean value returned by this function 
-	 * attribute insert will continue or stop the execution
-	 * 
-	 * @param array $params
-	 * 
-	 * @return boolean
-	 */
-	public function checkAttributeForInsert(array &$params);
-
-	/**
-	 * Check for specific rules and validation on attribute update
-	 * 
-	 * Called after standard attribute validation with referenced attribute params
-	 * depending on boolean value returned by this function 
-	 * attribute update will continue or stop the execution
-	 * 
-	 * @param array $params
-	 * 
-	 * @return boolean
-	 */
-	public function checkAttributeForUpdate(array &$params);
 
 	/**
 	 * Make changes to attribute before handing it to application
