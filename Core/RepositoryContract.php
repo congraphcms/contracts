@@ -27,19 +27,40 @@ interface RepositoryContract
 	
 	/**
 	 * Inserting model into database
-	 * @param $model array | object with parameters for object creation.
+	 * 
+	 * @param array 	$model 		parameters for object creation.
 	 */
 	public function create($model);
 
 	/**
 	 * Updating model in database
-	 * @param $model array | object with parameters for object update.
+	 *
+	 * @param int 		$id 		ID of object to be updated
+	 * @param array 	$model 		parameters for object update.
 	 */
-	public function update($model);
+	public function update($id, $model);
 
 	/**
 	 * Deleting model with given ID from database
-	 * @param $id int ID of object to be deleted.
+	 * 
+	 * @param int 		$id 		ID of object to be deleted.
 	 */
 	public function delete($id);
+
+	/**
+	 * Get object by ID
+	 * 
+	 * @param int 		$id 		ID of object to be fetched
+	 */
+	public function fetchById($id);
+
+	/**
+	 * Get objects
+	 * 
+	 * @param array 	$filter 	filters for object query
+	 * @param int 		$offset 	how many records to skip for query
+	 * @param int 		$limit 		how many records to take
+	 * @param array 	$sort 		array of fields for sorting
+	 */
+	public function get($filter = [], $offset = 0, $limit = 0, $sort = []);
 }
