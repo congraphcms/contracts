@@ -52,7 +52,7 @@ interface RepositoryContract
 	 * 
 	 * @param int 		$id 		ID of object to be fetched
 	 */
-	public function fetchById($id);
+	public function fetch($id);
 
 	/**
 	 * Get objects
