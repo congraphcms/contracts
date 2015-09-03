@@ -13,7 +13,7 @@ namespace Cookbook\Contracts\EAV;
 use Cookbook\Contracts\Core\RepositoryContract;
 
 /**
- * Interface for Attribute Set Repository class
+ * Interface for Entity Type Repository class
  *
  * @uses  Cookbook\Contracts\Core\RepositoryContract
  * 
@@ -23,16 +23,7 @@ use Cookbook\Contracts\Core\RepositoryContract;
  * @since 		0.1.0-alpha
  * @version  	0.1.0-alpha
  */
-interface AttributeSetRepositoryContract extends RepositoryContract
+interface EntityTypeRepositoryContract extends RepositoryContract
 {
-	/**
-	 * Delete attribute sets vy entity type ID and its set attributes
-	 * 
-	 * @param int $entityTypeID - ID of entity type
-	 * 
-	 * @return int
-	 * 
-	 * @throws InvalidArgumentException, Exception
-	 */
-	public function deleteByEntityType($entityTypeID);
+	
 }
