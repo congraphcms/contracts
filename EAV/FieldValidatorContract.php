@@ -57,6 +57,6 @@ interface FieldValidatorContract
 	 * 
 	 * @return boolean
 	 */
-	public function validateValue($valueParams, object $attributeDefinition);
+	public function validateValue($valueParams, $attributeDefinition);
 
 }
