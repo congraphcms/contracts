@@ -111,16 +111,27 @@ interface FieldHandlerContract
 	public function getDefaultValue($attribute, $options);
 
 	/**
-	 * Perform validation and preparation, and 
-	 * update attribute value in database
+	 * Insert value in database
 	 * 
 	 * Takes attribute value params and attribute definition
 	 * 
-	 * @param array 	$valueParams
-	 * @param stdClass 	$attributeDefinition
+	 * @param array $valueParams
+	 * @param object $attributeDefinition
 	 * 
 	 * @return boolean
 	 */
-	public function updateValue($valueParams, \stdClass$attributeDefinition);
+	public function insert($valueParams, $attributeDefinition);
+
+	/**
+	 * Update value in database
+	 * 
+	 * Takes attribute value params and attribute definition
+	 * 
+	 * @param array $valueParams
+	 * @param object $attributeDefinition
+	 * 
+	 * @return boolean
+	 */
+	public function update($valueParams, $attributeDefinition);
 
 }
