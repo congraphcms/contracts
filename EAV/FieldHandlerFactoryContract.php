@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Cookbook\Contracts\EAV;
+namespace Cookbook\Contracts\Eav;
 
 /**
  * Interface for Field Handler Factory class
@@ -26,7 +26,7 @@ interface FieldHandlerFactoryContract
 	 * 
 	 * @param string $attributeFieldType
 	 * 
-	 * @return Cookbook\Contracts\EAV\AttributeHandlerContract
+	 * @return Cookbook\Contracts\Eav\AttributeHandlerContract
 	 */
 	public function make($attributeFieldType);
 }

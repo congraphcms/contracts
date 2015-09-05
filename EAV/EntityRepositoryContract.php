@@ -10,8 +10,12 @@
 
 namespace Cookbook\Contracts\Eav;
 
+use Cookbook\Contracts\Core\RepositoryContract;
+
 /**
- * Interface for Field Handler Factory class
+ * Interface for Entity Repository class
+ *
+ * @uses  Cookbook\Contracts\Core\RepositoryContract
  * 
  * @author  	Nikola Plavšić <nikolaplavsic@gmail.com>
  * @copyright  	Nikola Plavšić <nikolaplavsic@gmail.com>
@@ -19,14 +23,7 @@ namespace Cookbook\Contracts\Eav;
  * @since 		0.1.0-alpha
  * @version  	0.1.0-alpha
  */
-interface FieldValidatorFactoryContract
+interface EntityRepositoryContract extends RepositoryContract
 {
-	/**
-	 * Make appropriate AttributeHandler by attribute field type.
-	 * 
-	 * @param string $attributeFieldType
-	 * 
-	 * @return Cookbook\Contracts\Eav\AttributeHandlerContract
-	 */
-	public function make($attributeFieldType);
+	
 }

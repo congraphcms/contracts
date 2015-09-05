@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Cookbook\Contracts\EAV;
+namespace Cookbook\Contracts\Eav;
 
 /**
  * Interface for Field Handler class
@@ -53,10 +53,10 @@ interface FieldValidatorContract
 	 * This function can be extended by specific attribute handler
 	 * 
 	 * @param array $valueParams
-	 * @param Eloqunt $attributeDefinition
+	 * @param object $attributeDefinition
 	 * 
 	 * @return boolean
 	 */
-	public function validateField($valueParams, \stdClass $attributeDefinition);
+	public function validateValue($valueParams, object $attributeDefinition);
 
 }
