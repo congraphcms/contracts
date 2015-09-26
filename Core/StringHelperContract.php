@@ -31,7 +31,7 @@ interface StringHelperContract
 	 * 
 	 * @return string
 	 */
-	public function createSlug($string);
+	public static function createSlug($string);
 
 	/**
 	 * Converts all accent characters to ASCII characters. (Wordpress function)
@@ -42,5 +42,5 @@ interface StringHelperContract
 	 * 
 	 * @return string Filtered string with replaced "nice" characters.
 	 */
-	public function remove_accents( $string );
+	public static function remove_accents( $string );
 }
