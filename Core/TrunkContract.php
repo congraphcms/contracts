@@ -34,22 +34,22 @@ interface TrunkContract
 	/**
 	 * Add item to trunk
 	 * 
-	 * @param  Model  $data
+	 * @param  mixed  $data
 	 * @param  boolean $included
 	 * 
 	 * @return void
 	 */
-	public function putItem(Model $item, $included = false);
+	public function putItem($item, $included = false);
 
 	/**
 	 * Add collection to trunk
 	 * 
-	 * @param  Collection  $data
+	 * @param  mixed  $data
 	 * @param  boolean $included
 	 * 
 	 * @return void
 	 */
-	public function putCollection(Collection $collection, $included = false);
+	public function putCollection($collection, $included = false);
 
 	/**
 	 * Check cache for item or collection
