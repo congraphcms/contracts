@@ -10,6 +10,8 @@
 
 namespace Cookbook\Contracts\Core;
 
+use Closure;
+
 /**
  * Interface for MapperTrait
  * 
