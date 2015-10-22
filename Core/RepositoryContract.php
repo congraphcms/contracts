@@ -52,7 +52,7 @@ interface RepositoryContract
 	 * 
 	 * @param int 		$id 		ID of object to be fetched
 	 */
-	public function fetch($id);
+	public function fetch($id, $include = []);
 
 	/**
 	 * Get objects
@@ -62,5 +62,5 @@ interface RepositoryContract
 	 * @param int 		$limit 		how many records to take
 	 * @param array 	$sort 		array of fields for sorting
 	 */
-	public function get($filter = [], $offset = 0, $limit = 0, $sort = []);
+	public function get($filter = [], $offset = 0, $limit = 0, $sort = [], $include = []);
 }

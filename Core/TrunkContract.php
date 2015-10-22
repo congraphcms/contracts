@@ -119,7 +119,7 @@ interface TrunkContract
 	 * 
 	 * @return void
 	 */
-	public function clear($id, $type);
+	public function forget($id, $type);
 
 	/**
 	 * Clear type from cache
@@ -128,5 +128,5 @@ interface TrunkContract
 	 * 
 	 * @return void
 	 */
-	public function clearType($type);
+	public function forgetType($type);
 }
