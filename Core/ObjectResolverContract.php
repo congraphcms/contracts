@@ -30,7 +30,7 @@ interface ObjectResolverContract extends MapperContract
 	 * 
 	 * @return mixed
 	 */      
-	public function resolve($type, $ids);
+	public function resolve($type, $ids, $include = []);
 
 	/**
 	 * Resolve objects with params
@@ -43,6 +43,6 @@ interface ObjectResolverContract extends MapperContract
 	 * 
 	 * @return array
 	 */      
-	public function resolveWithParams($type, $filter = [], $offset = 0, $limit = 0, $sort = []);
+	public function resolveWithParams($type, $filter = [], $offset = 0, $limit = 0, $sort = [], $include = []);
 
 }

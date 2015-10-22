@@ -29,7 +29,7 @@ interface TrunkContract
 	 * 
 	 * @return void
 	 */
-	public function put($data, $included = false);
+	public function put($data);
 
 	/**
 	 * Add item to trunk
@@ -39,7 +39,7 @@ interface TrunkContract
 	 * 
 	 * @return void
 	 */
-	public function putItem($item, $included = false);
+	public function putItem($item);
 
 	/**
 	 * Add collection to trunk
@@ -49,7 +49,7 @@ interface TrunkContract
 	 * 
 	 * @return void
 	 */
-	public function putCollection($collection, $included = false);
+	public function putCollection($collection);
 
 	/**
 	 * Check cache for item or collection
@@ -129,14 +129,4 @@ interface TrunkContract
 	 * @return void
 	 */
 	public function clearType($type);
-
-	/**
-	 * Check cache for included item
-	 * 
-	 * @param  mixed  	$key
-	 * @param  string  	$type
-	 * 
-	 * @return boolean 
-	 */
-	public function includes($id, $type);
 }
