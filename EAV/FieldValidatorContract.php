@@ -42,10 +42,11 @@ interface FieldValidatorContract
 	 * attribute update will continue or stop the execution
 	 * 
 	 * @param array $params
+	 * @param object $attribute
 	 * 
 	 * @return boolean
 	 */
-	public function validateAttributeForUpdate(array &$params);
+	public function validateAttributeForUpdate(array &$params, $attribute);
 	
 	/**
 	 * Validate attribute value
