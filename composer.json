@@ -1,5 +1,5 @@
 {
-    "name": "cookbook/contracts",
+    "name": "congraph/contracts",
     "description": "Interfaces for Cookbook CMS",
     "license": "MIT",
     "authors": [
