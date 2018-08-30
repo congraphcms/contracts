@@ -1,6 +1,6 @@
 {
-    "name": "cookbook/contracts",
-    "description": "Interfaces for Cookbook CMS",
+    "name": "congraph/contracts",
+    "description": "Interfaces for Congraph CMS",
     "license": "MIT",
     "authors": [
         {
@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Cookbook\\Contracts\\": ""
+            "Congraph\\Contracts\\": ""
         }
     },
     "minimum-stability": "dev"

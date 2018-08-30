@@ -1,6 +1,6 @@
 <?php
 /*
- * This file is part of the cookbook/contracts package.
+ * This file is part of the congraph/contracts package.
  *
  * (c) Nikola Plavšić <nikolaplavsic@gmail.com>
  *
@@ -8,14 +8,14 @@
  * file that was distributed with this source code.
  */
 
-namespace Cookbook\Contracts\Eav;
+namespace Congraph\Contracts\Eav;
 
 /**
  * Interface for Field Handler Factory class
  * 
  * @author  	Nikola Plavšić <nikolaplavsic@gmail.com>
  * @copyright  	Nikola Plavšić <nikolaplavsic@gmail.com>
- * @package 	cookbook/contracts
+ * @package 	congraph/contracts
  * @since 		0.1.0-alpha
  * @version  	0.1.0-alpha
  */
@@ -26,7 +26,7 @@ interface FieldHandlerFactoryContract
 	 * 
 	 * @param string $attributeFieldType
 	 * 
-	 * @return Cookbook\Contracts\Eav\AttributeHandlerContract
+	 * @return Congraph\Contracts\Eav\AttributeHandlerContract
 	 */
 	public function make($attributeFieldType);
 }

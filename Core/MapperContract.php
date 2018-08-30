@@ -1,6 +1,6 @@
 <?php 
 /*
- * This file is part of the cookbook/contracts package.
+ * This file is part of the congraph/contracts package.
  *
  * (c) Nikola Plavšić <nikolaplavsic@gmail.com>
  *
@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Cookbook\Contracts\Core;
+namespace Congraph\Contracts\Core;
 
 use Closure;
 
@@ -17,7 +17,7 @@ use Closure;
  * 
  * @author  	Nikola Plavšić <nikolaplavsic@gmail.com>
  * @copyright  	Nikola Plavšić <nikolaplavsic@gmail.com>
- * @package 	cookbook/contracts
+ * @package 	congraph/contracts
  * @since 		0.1.0-alpha
  * @version  	0.1.0-alpha
  */
